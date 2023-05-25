@@ -1,0 +1,240 @@
+body
+ {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: silver ;
+ }
+
+body.modo-escuro 
+{
+    background-color: #000000;
+    color: #1b1a1a;
+}
+
+header
+{
+    display: flex;
+    justify-content:space-between;
+    padding: 50px;
+    
+}
+
+
+header .trofeu,
+header .imagem-botao
+ {
+    width: 175px;
+    transition: 0,7s ease-in-out;
+}
+
+header #botao-alterar-tema,
+header .trofeu
+
+{
+    background: none;
+    border: none;
+}
+
+header .trofeu:hover,
+header .imagem-botao:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main .cartao-time:hover
+/*hover é para quando for por o mouse em cima do objeto */
+{
+    transform: scale(1.07);
+}
+
+main 
+{
+    padding-block-end: 50px;
+    
+}
+
+main .listagem-times-do-brasileirao 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-time
+{
+    background-color: rgb(93, 90, 90);
+    width: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 40px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+header .cartao-time:hover
+{
+    background-color: #96d9d6;
+}
+.modo-escuro .cartao-time:hover
+{
+    background-color: #a8a8a8 ;
+}
+
+main .cartao-time .informacoes,.informacoes-dif,.informacoes-dif-1
+{
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid gray ;
+    border-radius: 15px;
+}
+
+main .cartao-time .informacoes span 
+{
+    
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: whitesmoke
+    
+}
+main .cartao-time .informacoes-dif span /*fiz para o athletico pr */
+{
+    
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: whitesmoke
+    
+    
+}
+
+main .cartao-time .informacoes-dif-1 span /*fiz para o redlbull */
+{
+    
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: whitesmoke
+    
+}
+
+main .cartao-time .gif
+{
+    width: 175px;
+    height: 175px;
+}
+
+main .cartao-time .cores
+{
+    padding: 10px;
+    width: 270px;
+    border-radius: 50px;
+    display:flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tipo-verde 
+{
+    padding: 9px;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    cursor:default;
+}
+.tipo-branco
+{
+    padding: 9px;
+    border-radius: 25px;
+    background-color: white;
+    color: black ;
+    cursor:default;
+}
+.tipo-branco-dif 
+/* coloquei para que o branco não ficasse com preto no PAL e FLU*/
+{
+    padding: 9px;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(3, 183, 3) ;
+    cursor:default;
+}
+.tipo-branco-dif2
+/* coloquei para que o branco não ficasse com preto, nem verde no Fortaleza*/
+{
+    padding: 9px;
+    border-radius: 25px;
+    background-color: white;
+    color: blue;
+    cursor:default;
+}
+.tipo-branco-dif3
+/* coloquei para que o branco não ficasse com preto, nem verde, nem azul no Internacional*/
+{
+    padding: 9px;
+    border-radius: 25px;
+    background-color: white;
+    color:red;
+    cursor:default;
+}
+.tipo-preto
+{
+    padding: 9px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    cursor:default;
+}
+
+.tipo-vermelho
+{
+    padding: 09px;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    cursor:default;
+    
+}
+
+.tipo-azul
+{
+    padding: 09px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    cursor:default;
+}
+.tipo-amarelo
+{
+    padding: 09px;
+    border-radius: 25px;
+    background-color:yellow;
+    color: green;
+    cursor:default;
+}
+main .descricao
+{
+    max-height: 75px;
+    overflow-y: scroll;
+    font-size: 19px;
+    padding-right: 15px;
+    color: rgb(199, 191, 191);
+    cursor: default;
+}
+
+/*adicionei para que as cores do  link não altere, e para que não apareça o hiperlink*/
+
+a:link{
+    color:rgb(66, 61, 61);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(66, 61, 61);
+    text-decoration: none;
+}
+
